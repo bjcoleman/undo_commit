@@ -1,5 +1,15 @@
 class Hello:
-    def run(self):
-        print('Hello Skill Test taker!')
+    def __init__(self):
+        self.name = 'Skill Test taker'
 
-Hello().run()
+    def set_name(self, name):
+        self.name = name
+
+    def run(self):
+        print('Hello {}!'.format(self.name))
+
+h = Hello()
+h.run()
+
+h.set_name('Sharon')
+h.run()
